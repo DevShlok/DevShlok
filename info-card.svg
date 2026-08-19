@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="282" viewBox="0 0 660 282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="741" viewBox="0 0 820 741" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
 <style>
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
@@ -7,19 +7,22 @@
 .row { opacity: 0; animation: fadeUp 0.4s ease both; }
 </style>
 <defs><linearGradient id="ibg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
-<rect width="660" height="282" rx="12" fill="url(#ibg)"/>
-<rect x="0.5" y="0.5" width="659" height="281" rx="12" fill="none" stroke="#30363d" stroke-width="1"/>
-<line x1="0" y1="30" x2="660" y2="30" stroke="#30363d"/>
+<rect width="820" height="741" rx="12" fill="url(#ibg)"/>
+<rect x="0.5" y="0.5" width="819" height="740" rx="12" fill="none" stroke="#30363d" stroke-width="1"/>
+<line x1="0" y1="30" x2="820" y2="30" stroke="#30363d"/>
 <circle cx="20" cy="15.0" r="5" fill="#ff5f56"/>
 <circle cx="36" cy="15.0" r="5" fill="#ffbd2e"/>
 <circle cx="52" cy="15.0" r="5" fill="#27c93f"/>
-<text x="330.0" y="19.0" fill="#7d8590" font-size="12" text-anchor="middle">shlok@github: ~$ neofetch</text>
-<text class="row " x="20" y="69.5" font-size="13" style="animation-delay:0.00s"><tspan fill="#39d353" font-weight="700" font-size="15">DevShlok</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#7d8590">github</tspan></text>
-<line x1="20" y1="98.1" x2="640" y2="98.1" stroke="#58a6ff" stroke-opacity="0.35" stroke-width="1"/>
-<text class="row " x="20" y="121.5" font-size="13" style="animation-delay:0.20s"><tspan fill="#58a6ff" font-weight="600">Languages</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Python · Java · C/C++ · JS · TS · HTML/CSS · SQL</tspan></text>
-<text class="row " x="20" y="147.5" font-size="13" style="animation-delay:0.30s"><tspan fill="#58a6ff" font-weight="600">Frameworks</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">TensorFlow · PyTorch · HuggingFace · React · Node.js · Flutter</tspan></text>
-<text class="row " x="20" y="173.5" font-size="13" style="animation-delay:0.40s"><tspan fill="#58a6ff" font-weight="600">Tools</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Git · MySQL · PostgreSQL · Spark · Kafka · Docker</tspan></text>
-<text class="row " x="20" y="199.5" font-size="13" style="animation-delay:0.50s"><tspan fill="#58a6ff" font-weight="600">Platforms</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Linux · GitHub · GitLab · AWS · GCP · Ollama</tspan></text>
-<text class="row " x="20" y="225.5" font-size="13" style="animation-delay:0.60s"><tspan fill="#58a6ff" font-weight="600">AI</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Claude Code · MCPs · LangChain · RAG · VectorDB</tspan></text>
-<text class="row " x="20" y="251.5" font-size="13" style="animation-delay:0.70s"><tspan fill="#58a6ff" font-weight="600">Data Eng</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">BigData · DevOps · MLOps · ETL/ELT · CI/CD · REST APIs</tspan></text>
+<text x="410.0" y="19.0" fill="#7d8590" font-size="12" text-anchor="middle">shlok@github: ~$ neofetch</text>
+<text class="row " x="20" y="224.0" font-size="18" style="animation-delay:0.00s"><tspan fill="#39d353" font-weight="700" font-size="22">DevShlok</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#7d8590">github</tspan></text>
+<line x1="20" y1="268.0" x2="800" y2="268.0" stroke="#58a6ff" stroke-opacity="0.35" stroke-width="1"/>
+<text class="row " x="20" y="304.0" font-size="18" style="animation-delay:0.28s"><tspan fill="#58a6ff" font-weight="600">Languages</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Python · Java · C/C++ · JS · TS · HTML/CSS · SQL</tspan></text>
+<text class="row " x="20" y="344.0" font-size="18" style="animation-delay:0.42s"><tspan fill="#58a6ff" font-weight="600">Frameworks</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">TensorFlow · PyTorch · HuggingFace · React · Node.js · Flutter</tspan></text>
+<text class="row " x="20" y="384.0" font-size="18" style="animation-delay:0.56s"><tspan fill="#58a6ff" font-weight="600">Tools</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Git · MySQL · PostgreSQL · Spark · Kafka · Docker</tspan></text>
+<text class="row " x="20" y="424.0" font-size="18" style="animation-delay:0.70s"><tspan fill="#58a6ff" font-weight="600">Platforms</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Linux · GitHub · GitLab · AWS · GCP · Ollama</tspan></text>
+<text class="row " x="20" y="464.0" font-size="18" style="animation-delay:0.84s"><tspan fill="#58a6ff" font-weight="600">AI</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Claude Code · MCPs · LangChain · RAG · VectorDB</tspan></text>
+<text class="row " x="20" y="504.0" font-size="18" style="animation-delay:0.98s"><tspan fill="#58a6ff" font-weight="600">Data Eng</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">BigData · DevOps · MLOps · ETL/ELT · CI/CD · REST APIs</tspan></text>
+<line x1="0" y1="698" x2="820" y2="698" stroke="#30363d"/>
+<text x="20" y="717" fill="#7d8590" font-size="13">shlok@github:~$ neofetch <tspan fill="#e6edf3">DevShlok</tspan></text>
+<rect x="212" y="705" width="8" height="14" fill="#e6edf3"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/></rect>
 </svg>

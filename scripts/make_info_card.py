@@ -29,12 +29,17 @@ FIELDS = [
 ]
 # ─────────────────────────────────────────────────────────────────────────────
 
-W = 660
+W          = 820
 TITLEBAR_H = 30
-PAD = 20
-LINE_H = 26
-FIELD_AREA_H = len(FIELDS) * LINE_H + PAD
-CANVAS_H = TITLEBAR_H + PAD + LINE_H + PAD // 2 + FIELD_AREA_H + PAD
+STATUS_H   = 43          # bottom status bar — mirrors the portrait
+CANVAS_H   = 741         # locked to the portrait SVG height
+PAD        = 20
+LINE_H     = 40
+
+# how much vertical space the content block actually needs
+CONTENT_H  = LINE_H * (len(FIELDS) + 2) + PAD  # title + sep + fields
+# start y so the block sits vertically centred in the drawable area
+CONTENT_TOP = TITLEBAR_H + (CANVAS_H - TITLEBAR_H - STATUS_H - CONTENT_H) // 2
 
 BG        = "#0d1117"
 BG2       = "#111722"
@@ -45,7 +50,7 @@ VAL_COL   = "#e6edf3"   # near-white for values
 TITLE_COL = "#39d353"   # green username
 SUB_COL   = "#7d8590"
 
-STAGGER   = 0.10   # seconds between each line
+STAGGER   = 0.14   # seconds between each line
 FADE_DUR  = 0.40
 
 css_block = "" if STATIC else f"""<style>
@@ -78,21 +83,21 @@ parts.append(
     f'text-anchor="middle">shlok@github: ~$ neofetch</text>'
 )
 
-# username + @ line
-ty = TITLEBAR_H + PAD + LINE_H * 0.75
+# username + @ line — anchored to the vertically-centred content block
+ty = CONTENT_TOP + LINE_H * 0.75
 
 def row(idx, content, extra_cls=""):
     delay = idx * STAGGER
     if STATIC:
-        return f'<text x="{PAD}" y="{ty + idx * LINE_H:.1f}" font-size="13">{content}</text>'
+        return f'<text x="{PAD}" y="{ty + idx * LINE_H:.1f}" font-size="18">{content}</text>'
     return (
         f'<text class="row {extra_cls}" x="{PAD}" y="{ty + idx * LINE_H:.1f}" '
-        f'font-size="13" style="animation-delay:{delay:.2f}s">{content}</text>'
+        f'font-size="18" style="animation-delay:{delay:.2f}s">{content}</text>'
     )
 
 # title row
 parts.append(row(0,
-    f'<tspan fill="{TITLE_COL}" font-weight="700" font-size="15">{TITLE}</tspan>'
+    f'<tspan fill="{TITLE_COL}" font-weight="700" font-size="22">{TITLE}</tspan>'
     f'<tspan fill="{MUTED}">@</tspan>'
     f'<tspan fill="{SUB_COL}">github</tspan>'
 ))
@@ -115,6 +120,25 @@ for fi, (key, val) in enumerate(FIELDS):
         f'<tspan fill="{VAL_COL}">{val_escaped}</tspan>'
     )
     parts.append(row(idx + 1, content))
+
+# ── status bar (mirrors portrait terminal) ───────────────────────────────
+STATUS_LINE_Y = CANVAS_H - STATUS_H
+STATUS_TEXT_Y = STATUS_LINE_Y + 19
+parts.append(
+    f'<line x1="0" y1="{STATUS_LINE_Y}" x2="{W}" y2="{STATUS_LINE_Y}" stroke="{FRAME}"/>'
+)
+parts.append(
+    f'<text x="{PAD}" y="{STATUS_TEXT_Y}" fill="{MUTED}" font-size="13">'
+    f'shlok@github:~$ neofetch '
+    f'<tspan fill="{VAL_COL}">DevShlok</tspan></text>'
+)
+# blinking cursor
+parts.append(
+    f'<rect x="{PAD + 192}" y="{STATUS_TEXT_Y - 12}" width="8" height="14" fill="{VAL_COL}">'
+    f'<animate attributeName="opacity" values="1;1;0;0" '
+    f'keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>'
+    f'</rect>'
+)
 
 parts.append("</svg>")
 
