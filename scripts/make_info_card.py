@@ -20,14 +20,12 @@ TITLE     = "DevShlok"
 SUBTITLE  = "shlok@github"
 
 FIELDS = [
-    ("OS",       "Windows 11 / Ubuntu WSL2"),
-    ("Role",     "Full Stack Developer"),
-    ("Stack",    "Python · JS/TS · React · Node"),
-    ("DB",       "PostgreSQL · MongoDB · Redis"),
-    ("Cloud",    "AWS · Vercel · GitHub Actions"),
-    ("Editor",   "VS Code  ❤"),
-    ("Focus",    "Open Source · AI tooling"),
-    ("GitHub",   "github.com/DevShlok"),
+    ("Languages", "Python · Java · C/C++ · JS · TS · HTML/CSS · SQL"),
+    ("Frameworks","TensorFlow · PyTorch · HuggingFace · React · Node.js · Flutter"),
+    ("Tools",     "Git · MySQL · PostgreSQL · Spark · Kafka · Docker"),
+    ("Platforms", "Linux · GitHub · GitLab · AWS · GCP · Ollama"),
+    ("AI",        "Claude Code · MCPs · LangChain · RAG · VectorDB"),
+    ("Data Eng",  "BigData · DevOps · MLOps · ETL/ELT · CI/CD · REST APIs"),
 ]
 # ─────────────────────────────────────────────────────────────────────────────
 
