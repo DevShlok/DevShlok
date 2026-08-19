@@ -32,5 +32,6 @@
 <p><b>Full Stack Developer · Open Source · AI Tooling</b></p>
 
 [![GitHub](https://img.shields.io/badge/GitHub-DevShlok-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DevShlok)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shlok_Shukla-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shlok-shukla1469/)
 
 </div>
