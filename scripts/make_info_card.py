@@ -29,12 +29,12 @@ FIELDS = [
 ]
 # ─────────────────────────────────────────────────────────────────────────────
 
-W          = 820
+W          = 570
 TITLEBAR_H = 30
-STATUS_H   = 43          # bottom status bar — mirrors the portrait
-CANVAS_H   = 741         # locked to the portrait SVG height
-PAD        = 20
-LINE_H     = 40
+STATUS_H   = 36          # bottom status bar
+CANVAS_H   = 327         # matches portrait rendered height: 741 × (370/840)
+PAD        = 16
+LINE_H     = 28
 
 # how much vertical space the content block actually needs
 CONTENT_H  = LINE_H * (len(FIELDS) + 2) + PAD  # title + sep + fields
@@ -89,15 +89,15 @@ ty = CONTENT_TOP + LINE_H * 0.75
 def row(idx, content, extra_cls=""):
     delay = idx * STAGGER
     if STATIC:
-        return f'<text x="{PAD}" y="{ty + idx * LINE_H:.1f}" font-size="18">{content}</text>'
+        return f'<text x="{PAD}" y="{ty + idx * LINE_H:.1f}" font-size="13">{content}</text>'
     return (
         f'<text class="row {extra_cls}" x="{PAD}" y="{ty + idx * LINE_H:.1f}" '
-        f'font-size="18" style="animation-delay:{delay:.2f}s">{content}</text>'
+        f'font-size="13" style="animation-delay:{delay:.2f}s">{content}</text>'
     )
 
 # title row
 parts.append(row(0,
-    f'<tspan fill="{TITLE_COL}" font-weight="700" font-size="22">{TITLE}</tspan>'
+    f'<tspan fill="{TITLE_COL}" font-weight="700" font-size="15">{TITLE}</tspan>'
     f'<tspan fill="{MUTED}">@</tspan>'
     f'<tspan fill="{SUB_COL}">github</tspan>'
 ))
