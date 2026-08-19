@@ -1,0 +1,14 @@
+# Python virtualenv
+.venv/
+__pycache__/
+*.py[cod]
+
+# rembg ML model cache (downloaded on first run, not needed in repo)
+# It lives in %USERPROFILE%/.u2net by default
+
+# generated source (re-created by scripts, not committed except the 3 SVGs)
+source-prepped.png
+
+# OS
+.DS_Store
+Thumbs.db

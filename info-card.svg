@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="334" viewBox="0 0 490 334" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<style>
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+.row { opacity: 0; animation: fadeUp 0.4s ease both; }
+</style>
+<defs><linearGradient id="ibg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
+<rect width="490" height="334" rx="12" fill="url(#ibg)"/>
+<rect x="0.5" y="0.5" width="489" height="333" rx="12" fill="none" stroke="#30363d" stroke-width="1"/>
+<line x1="0" y1="30" x2="490" y2="30" stroke="#30363d"/>
+<circle cx="20" cy="15.0" r="5" fill="#ff5f56"/>
+<circle cx="36" cy="15.0" r="5" fill="#ffbd2e"/>
+<circle cx="52" cy="15.0" r="5" fill="#27c93f"/>
+<text x="245.0" y="19.0" fill="#7d8590" font-size="12" text-anchor="middle">shlok@github: ~$ neofetch</text>
+<text class="row " x="20" y="69.5" font-size="13" style="animation-delay:0.00s"><tspan fill="#39d353" font-weight="700" font-size="15">DevShlok</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#7d8590">github</tspan></text>
+<line x1="20" y1="98.1" x2="470" y2="98.1" stroke="#58a6ff" stroke-opacity="0.35" stroke-width="1"/>
+<text class="row " x="20" y="121.5" font-size="13" style="animation-delay:0.20s"><tspan fill="#58a6ff" font-weight="600">OS</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Windows 11 / Ubuntu WSL2</tspan></text>
+<text class="row " x="20" y="147.5" font-size="13" style="animation-delay:0.30s"><tspan fill="#58a6ff" font-weight="600">Role</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Full Stack Developer</tspan></text>
+<text class="row " x="20" y="173.5" font-size="13" style="animation-delay:0.40s"><tspan fill="#58a6ff" font-weight="600">Stack</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Python · JS/TS · React · Node</tspan></text>
+<text class="row " x="20" y="199.5" font-size="13" style="animation-delay:0.50s"><tspan fill="#58a6ff" font-weight="600">DB</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">PostgreSQL · MongoDB · Redis</tspan></text>
+<text class="row " x="20" y="225.5" font-size="13" style="animation-delay:0.60s"><tspan fill="#58a6ff" font-weight="600">Cloud</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">AWS · Vercel · GitHub Actions</tspan></text>
+<text class="row " x="20" y="251.5" font-size="13" style="animation-delay:0.70s"><tspan fill="#58a6ff" font-weight="600">Editor</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">VS Code  ❤</tspan></text>
+<text class="row " x="20" y="277.5" font-size="13" style="animation-delay:0.80s"><tspan fill="#58a6ff" font-weight="600">Focus</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">Open Source · AI tooling</tspan></text>
+<text class="row " x="20" y="303.5" font-size="13" style="animation-delay:0.90s"><tspan fill="#58a6ff" font-weight="600">GitHub</tspan><tspan fill="#7d8590">: </tspan><tspan fill="#e6edf3">github.com/DevShlok</tspan></text>
+</svg>
