@@ -1,22 +1,22 @@
 {
   "username": "DevShlok",
-  "generated_at": "2026-08-30T11:51:49Z",
+  "generated_at": "2026-08-31T13:42:47Z",
   "range": {
     "start": "2025-08-31",
+    "end": "2026-08-31"
+  },
+  "total_contributions": 335,
+  "active_days": 62,
+  "avg_per_active_day": 5.4,
+  "current_streak": {
+    "length": 12,
+    "start": "2026-08-19",
     "end": "2026-08-30"
   },
-  "total_contributions": 334,
-  "active_days": 61,
-  "avg_per_active_day": 5.5,
-  "current_streak": {
-    "length": 11,
-    "start": "2026-08-19",
-    "end": "2026-08-29"
-  },
   "longest_streak": {
-    "length": 11,
+    "length": 12,
     "start": "2026-08-19",
-    "end": "2026-08-29"
+    "end": "2026-08-30"
   },
   "best_day": {
     "date": "2026-08-12",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-08",
-      "total": 127
+      "total": 128
     }
   ],
   "days": [
@@ -1535,6 +1535,10 @@
     },
     {
       "date": "2026-08-30",
+      "count": 1
+    },
+    {
+      "date": "2026-08-31",
       "count": 0
     }
   ]
